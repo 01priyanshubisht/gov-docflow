@@ -1,0 +1,108 @@
+/**
+ * Officer Dashboard Specific Styles
+ */
+
+/* Alert Banner - Government Standard */
+.alert-banner {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  border-left: 4px solid #e67e22;
+}
+
+.alert-banner.priority {
+  background: #fff4e6;
+  border-left-color: #e67e22;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-content strong {
+  font-size: 14px;
+  color: #333333;
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.alert-content p {
+  font-size: 13px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Document Grid */
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 16px;
+}
+
+/* Quick Actions - Government Standard */
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.quick-action-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.quick-action-card:hover {
+  border-color: #0f5e59;
+  background: #f0f9f8;
+}
+
+.action-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Section Action Button */
+.section-action-btn {
+  padding: 8px 16px;
+  background: #f0f9f8;
+  color: #0f5e59;
+  border: 1px solid #0f5e59;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.section-action-btn:hover {
+  background: #0f5e59;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .document-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-actions-grid {
+    grid-template-columns: 1fr;
+  }
+}

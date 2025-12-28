@@ -1,0 +1,31 @@
+/**
+ * Authentication Constants
+ * Government Internal Platform
+ */
+
+export const AUTH_EVENTS = {
+  LOGIN_SUCCESS: 'LOGIN_SUCCESS',
+  LOGIN_FAILED: 'LOGIN_FAILED',
+  LOGOUT: 'LOGOUT',
+  SESSION_EXPIRED: 'SESSION_EXPIRED',
+  UNAUTHORIZED: 'UNAUTHORIZED',
+  TOKEN_REFRESH: 'TOKEN_REFRESH'
+};
+
+export const USER_STATUS = {
+  ACTIVE: 'active',
+  INACTIVE: 'inactive',
+  SUSPENDED: 'suspended',
+  PENDING: 'pending'
+};
+
+export const AUTH_STATUS_CODES = {
+  SUCCESS: 200,
+  CREATED: 201,
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  INTERNAL_ERROR: 500
+};

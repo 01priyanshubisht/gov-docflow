@@ -1,0 +1,122 @@
+/**
+ * Auditor Dashboard Specific Styles
+ */
+
+/* Search Container */
+.search-container {
+  margin-bottom: 24px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #0f5e59;
+}
+
+.search-btn {
+  padding: 12px 24px;
+  background: #0f5e59;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #0a4a46;
+}
+
+/* Search Filters */
+.search-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-select,
+.filter-date {
+  padding: 10px 14px;
+  font-size: 13px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  outline: none;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-select {
+  min-width: 180px;
+}
+
+.filter-date {
+  min-width: 150px;
+}
+
+.filter-select:focus,
+.filter-date:focus {
+  border-color: #0f5e59;
+}
+
+/* Notice Banner - Government Standard */
+.notice-banner {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  background: #e3f2fd;
+  border-left: 4px solid #1976d2;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.notice-content {
+  flex: 1;
+}
+
+.notice-content strong {
+  font-size: 14px;
+  color: #333333;
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.notice-content p {
+  font-size: 13px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-filters {
+    flex-direction: column;
+  }
+
+  .filter-select,
+  .filter-date {
+    width: 100%;
+  }
+}
