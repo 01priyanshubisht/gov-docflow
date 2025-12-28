@@ -1,34 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import './index.css';
-import App from './App';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+// import App from './App';
+// import SupportAdmin from './components/ChatSupport/SupportAdmin/index';
 
-// Basic Redux Store
-const initialState = {
-  auth: {
-    isAuthenticated: false,
-    user: null
-  }
-};
+// const path = window.location.pathname
 
-const rootReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'LOGOUT':
-      return { ...state, auth: { isAuthenticated: false, user: null } };
-    default:
-      return state;
-  }
-};
-
-const store = createStore(rootReducer);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     { path.indexOf('/support') === -1 ? <App /> : <SupportAdmin /> }
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import store from "./redux/store";
+import { Provider } from "react-redux";
+import { CookiesProvider } from "react-cookie";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <CookiesProvider>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </BrowserRouter>
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </CookiesProvider>,
+  document.getElementById("root")
 );

@@ -5,6 +5,7 @@ import emblemIndia from "../../img/emblem-india.jpeg";
 import uttarakhandLogo from "../../img/ukrajya.png";
 import mygovLogo from "../../img/mygov.png";
 import azadiLogo from "../../img/azadi.png";
+import ourLogo from "../../img/ourlogo.png";
 import wheelchairIcon from "../../img/icons8-wheelchair-24.png";
 import { useSelector, useDispatch } from "react-redux";
 import { getLogoutAction } from "../../redux/actions";
@@ -88,6 +89,12 @@ const Header = () => {
             {/* MyGov Logo */}
             <div className="mygov-wrapper">
               <img src={mygovLogo} alt="MyGov" style={{height: '48px', width: 'auto', display: 'block'}} />
+            </div>
+            {/* Divider */}
+            <div className="branding-divider"></div>
+            {/* Our Logo */}
+            <div className="our-logo-wrapper">
+              <img src={ourLogo} alt="Document One Logo" />
             </div>
             {/* Divider */}
             <div className="branding-divider"></div>

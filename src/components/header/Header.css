@@ -1,4 +1,4 @@
-/* Government-Style Header for Krishi Sadhan */
+/* Government-Style Header for Gov DocFlow AI */
 .govt-header-wrapper {
   width: 100%;
   background: white;
@@ -194,6 +194,26 @@
 .emblem-wrapper {
   display: flex;
   align-items: center;
+}
+
+.our-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 3px solid #0f5e59;
+  border-radius: 50%;
+  background: #f0faf8;
+  box-shadow: 0 2px 6px rgba(15, 94, 89, 0.2);
+  width: 60px;
+  height: 60px;
+}
+
+.our-logo-wrapper img {
+  height: 36px;
+  width: 36px;
+  display: block;
+  object-fit: contain;
 }
 
 .project-logo-wrapper {
